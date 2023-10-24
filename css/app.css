@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+ 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+ 
+body {
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+ 
+  display: flex;
+  flex-direction: column;
+}
+.logo{
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: white;
+  padding: .5rem 1.5rem;
+  border-radius: 999px;
+  transition: all .2s ease-in-out;
+}
+ 
+header.navbar-container {
+  background-color: #007bff;
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+  padding-block: 1rem;
+  z-index: 999;
+}
+ 
+header.navbar-container .logo img {
+  width: 150px;
+}
+ 
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+ 
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+ 
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: white;
+  padding: .5rem 1.5rem;
+  border-radius: 999px;
+  transition: all .2s ease-in-out;
+}
+ 
+header.navbar-container .nav-list li:hover a {
+  background-color: #56a3f5;
+  color: black;
+}
+@media (max-width: 768px){
+  header.navbar-container {
+    flex-direction: column;
+  }
+}
+/* CSS untuk div dengan kelas "title" */
+.title {
+  background-color: #007bff; /* Warna latar belakang title */
+  color: #fff; /* Warna teks title */
+  text-align: center; /* Pusatkan teks horizontal */
+  padding: 20px; /* Ruang dalam title */
+  margin: 0; /* Hapus margin bawaan */
+}
+
+/* CSS untuk h1 di dalam div "title" */
+.title h1 {
+  font-size: 2rem; /* Ukuran font judul */
+  margin: 0; /* Hapus margin bawaan h1 */
+}
+
+/* Tambahan CSS untuk tampilan responsif jika diperlukan */
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 1.5rem; /* Ukuran font judul untuk perangkat mobile */
+  }
+}
+
+ 
+main {
+  max-width: 1200px;
+  width: 100%;
+  padding: 2rem 2rem;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  text-align: center;
+  margin:auto;
+}
+/* CSS Untuk Section Home */
+#home {
+  background-color: #f0f0f0; /* Warna latar belakang */
+  padding: 20px; /* Ruang dalam di sekitar konten */
+  text-align: center; /* Pusatkan konten secara horizontal */
+  max-width: 900px;
+}
+
+
+img {
+  max-width: 100%; /* Maksimum lebar gambar agar sesuai dengan lebar konten */
+  height: auto; /* Biarkan tinggi gambar disesuaikan secara otomatis */
+  margin: 20px 0; /* Jarak atas dan bawah gambar */
+}
+
+p {
+  margin: 10px 0; /* Jarak atas dan bawah paragraf */
+}
+
+ul {
+  list-style-type: none; /* Hilangkan marker dari daftar */
+  padding: 0; /* Hilangkan padding dari daftar */
+}
+
+li {
+  margin-bottom: 5px; /* Jarak bawah antara item daftar */
+}
+
+strong {
+  font-weight: bold; /* Berikan teks tebal pada elemen yang diberi tag <strong> */
+}
+
+button {
+  background-color: #007bff; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  padding: 10px 20px; /* Ruang dalam tombol */
+  border: none; /* Hapus border tombol */
+  border-radius: 5px; /* Tambahkan sudut melengkung pada tombol */
+  cursor: pointer; /* Ganti cursor menjadi tanda tangan saat mengarahkan ke tombol */
+  transition: background-color 0.3s ease; /* Efek transisi perubahan warna latar belakang */
+}
+
+button:hover {
+  background-color: #0056b3; /* Warna latar belakang saat mengarahkan kursor ke tombol */
+}
+/* Tampilan responsif untuk perangkat dengan lebar maksimum 768px (misalnya, perangkat mobile) */
+@media (max-width: 768px) {
+  #home {
+    padding: 10px; /* Ubah ruang dalam untuk perangkat mobile */
+  }
+
+  .title {
+    font-size: 1.5rem; /* Ukuran font judul untuk perangkat mobile */
+  }
+
+  img {
+    max-width: 100%; /* Biarkan gambar mengisi lebar konten */
+    height: auto;
+    margin: 10px 0; /* Ubah jarak atas dan bawah gambar */
+  }
+
+  p {
+    margin: 5px 0; /* Ubah jarak atas dan bawah paragraf */
+  }
+
+  ul {
+    padding-left: 20px; /* Tambahkan padding kiri untuk daftar di perangkat mobile */
+  }
+
+  li {
+    margin-bottom: 3px; /* Ubah jarak atas dan bawah item daftar */
+  }
+
+  button {
+    padding: 8px 16px; /* Ubah ruang dalam tombol */
+  }
+}
+
+
+/* CSS untuk elemen article */
+article {
+  max-width: 800px;
+  flex: 3;
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* CSS untuk elemen <aside> */
+aside {
+  max-width: 300px;
+  position: sticky;
+  flex: 1;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-left: 20px; /* Menambahkan margin antara .content-description dan <aside> */
+  text-align: center;
+}
+
+/* CSS untuk gambar profil */
+aside img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+/* CSS untuk <aside> */
+aside p {
+  font-size: 18px;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Responsif untuk tampilan layar yang lebih kecil */
+@media (max-width: 768px) {
+  .content {
+    max-width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  aside {
+    margin-left: 0;
+    margin-top: 20px; /* Menambahkan margin atas pada <aside> untuk tampilan layar kecil */
+  }
+}
+/* Gaya untuk section Skill */
+.skill {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.skill-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+/* Gaya untuk daftar Skill */
+.skill-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-list li {
+  flex: 0 0 33.33%; /* 3 kolom per baris pada desktop */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skill-list img {
+  width: 100%;
+  max-width: 150px; /* Lebar maksimum gambar */
+  height: auto;
+  border-radius: 50%; /* Untuk membuat gambar bundar */
+  margin-bottom: 10px;
+}
+
+.skill-list p {
+  font-size: 20px;
+  color: #555;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .skill-list li {
+      flex: 0 0 50%; /* 2 kolom per baris pada tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-list li {
+      flex: 0 0 100%; /* 1 kolom per baris pada mobile */
+  }
+}
+
+
+/* CSS untuk section portofolio */
+.portfolio {
+  padding: 40px 0;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+/* CSS untuk judul "Portofolio Kami" */
+.OurProject h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Container untuk kartu-kartu proyek */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* CSS untuk kartu (card) proyek */
+.project {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: calc(33.3333% - 20px); /* 3 item per baris pada desktop */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* CSS untuk gambar proyek */
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* CSS untuk judul proyek */
+.project h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+/* CSS untuk deskripsi proyek */
+.project p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* CSS untuk tombol "Lihat Detail" */
+.detail-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.detail-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsif: 1 item per baris pada perangkat mobile */
+@media (max-width: 768px) {
+  .project {
+    width: 100%; /* 1 item per baris pada mobile */
+  }
+}
+/* Gaya untuk section Testimoni */
+.testimonials {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Gaya untuk Carousel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  flex: 0 0 25%; /* 4 item per baris */
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.testimonial-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+/* Navigasi Carousel */
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 20px;
+}
+
+.next-button {
+  right: 20px;
+}
+
+/* Responsif untuk Carousel */
+@media (max-width: 768px) {
+  .testimonial-card {
+    flex: 0 0 50%; /* 2 item per baris pada layar kecil */
+  }
+
+  /* Tombol navigasi yang responsif */
+  .prev-button,
+  .next-button {
+    font-size: 20px;
+  }
+}
+
+/* Gaya untuk form kontak */
+.contact-form {
+  max-width: 1200px ;
+  background-color: #007BFF;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.contact-form h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  max-width: 1200px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+button[type="submit"] {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+
+  .contact-form {
+    max-width: 600px;
+      padding: 20px;
+  }
+  
+
+  .form-group input,
+  .form-group textarea {
+      font-size: 14px;
+  }
+
+  button[type="submit"] {
+      padding: 10px 20px;
+  }
+}
+
+/* Gaya untuk footer */
+.footer {
+  background-color: #007bff;
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  color: white;
+  padding-inline: 2rem;
+  text-align: center;
+
+}
+
+.footer-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 16px;
+  color: white;
+}
+
+.footer-links {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.footer-social {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+/* Kalimat hak cipta */
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-logo,
+  .footer-social,
+  .footer-links {
+      flex: none;
+      width: 100%;
+      text-align: center;
+  }
+
+  .footer-logo h2 {
+      font-size: 20px;
+  }
+
+  .footer-logo p {
+      font-size: 14px;
+  }
+
+  .footer-links a,
+  .footer-social a {
+      font-size: 18px;
+  }
+}
