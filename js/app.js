@@ -93,3 +93,28 @@ document.addEventListener("DOMContentLoaded", function () {
     // Otomatis geser carousel setiap beberapa detik
     setInterval(slideRight, 5000); // Geser setiap 5 detik
 });
+
+// Mendapatkan elemen-elemen yang dibutuhkan
+var form = document.getElementById("form-id");
+var btn = document.getElementById("btn-wa");
+var nama = document.getElementById("nama");
+var pesan = document.getElementById("pesan");
+
+// Menambahkan event listener untuk tombol kirim
+btn.addEventListener("click", function (e) {
+    // Mencegah form terkirim secara default
+    e.preventDefault();
+
+    // Mendapatkan nilai dari input nama, number, dan pesan
+    var namaValue = nama.value;
+    var pesanValue = pesan.value;
+
+    // Membuat teks yang akan dikirim ke whatsapp
+    teks = "Nama: " + namaValue + "\n" + "Pesan: " + pesanValue + "\n" + "Terima kasih";
+
+    // Membuat url whatsapp dengan nomor tujuan dan teks
+    var url = "https://api.whatsapp.com/send?phone=6282277773467&text=" + encodeURIComponent(teks);
+
+    // Membuka jendela whatsapp dengan url yang sudah dibuat
+    window.open(url, "index.html");
+});
